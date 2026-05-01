@@ -2,13 +2,17 @@ import Joi from 'joi';
 
 export default {
   create: Joi.object({
-    name: Joi.string().alphanum().required(),
-    page: Joi.number().integer().min(1).max(999).required(),
+    title: Joi.string().alphanum().required(),
+    author: Joi.string().alphanum().required(),
+    year: Joi.number().min(1).max(9999).required(),
+    genre: Joi.string().alphanum().required(),
   }),
 
   update: Joi.object({
-    name: Joi.string().alphanum().required(),
-    page: Joi.number().integer().min(1).max(9999).required(),
+    title: Joi.string().alphanum().required(),
+    author: Joi.string().alphanum().required(),
+    year: Joi.number().min(1).max(9999).required(),
+    genre: Joi.string().alphanum().required(),
   }),
 }
 
