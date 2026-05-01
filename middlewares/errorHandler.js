@@ -1,4 +1,4 @@
-import HttpErrors from 'https-errors';
+import HttpErrors from 'http-errors';
 
 export default {
   notFound(req, res, next) {
