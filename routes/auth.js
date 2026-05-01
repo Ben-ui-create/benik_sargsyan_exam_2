@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import * as controller from '../controllers/auth.js';
+import controller from '../controllers/auth.js';
 import authorization from '../middlewares/authorization.js';
 import validator from '../middlewares/validation.js';
 import schema from '../middlewares/schemas/auth.schema.js';
