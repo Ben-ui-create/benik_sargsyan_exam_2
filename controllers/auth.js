@@ -59,5 +59,17 @@ export default {
     } catch (e) {
       next(e);
     }
+  },
+
+  async profile(req, res, next) {
+    try {
+      const user = await User.findById(req.userId);
+
+      res.json({
+        user,
+      });
+    } catch (e) {
+      next(e);
+    }
   }
 }
