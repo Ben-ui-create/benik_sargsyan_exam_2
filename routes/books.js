@@ -26,10 +26,6 @@ router.put(
   controller.update
 );
 
-router.delete(
-  '/:id',
-  authorization,
-  controller.delete
-);
+router.delete('/:id', authorization, controller.remove);
 
 export default router;
